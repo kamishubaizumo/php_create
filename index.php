@@ -12,7 +12,15 @@
 <body>
  <!-- headerの部分テンプレート -->
   <?php include("html\header.php") ?>
-
+  <div class="header">
+    <header>
+      <h1>インフラについての勉強</h1>
+      <?php
+        date_default_timezone_set('Asia/Tokyo');
+        echo("現在の時刻は".date('g時 i分 s秒')."です");
+      ?>
+    </header>
+  </div><p id="time">現在の時刻は...</p>
   <h2>ネットワークを学ぶ</h2>
   <h3>プロトコル</h3>
   <ul>
